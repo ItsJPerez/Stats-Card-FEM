@@ -2,6 +2,9 @@
     --Main-BG: hsl(233, 47%, 7%);
     --Card-BG: hsl(244, 38%, 16%);
     --Accent:hsl(277, 64%, 61%);
+    --White:hsl(0, 0%, 100%);
+    --Main-PG:hsla(0, 0%, 100%, 0.75);
+    --Stats:hsla(0, 0%, 100%, 0.6);
 }
 
 
@@ -14,8 +17,13 @@
   }
  
   body {
+    background-color: var(--Main-BG);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    margin: 1rem;
   }
 
   img, picture, video, canvas, svg {
@@ -30,5 +38,59 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
   
