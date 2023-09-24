@@ -1,5 +1,5 @@
 main{
-    border-radius: 1rem;
+    border-radius: .3em;
     overflow: hidden;
 }
 .card{
@@ -76,9 +76,106 @@ img{
 
 }
 @media(min-width:1024px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .card{
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 55%;
+    }
+    .desc{
+        padding: .5rem;
+    }
+    .desc-heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .desc-paragraph{
+        font-size: 16px;
+    }
+    .stats-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    span{
+        color: var(--Accent);
+    }
+    
+    .number{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .category{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 }
 @media(min-width:1280px){
-
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+    }
+    .desc-heading{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .desc-paragraph{
+        font-size: 22px;
+    }
+    .stats-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    span{
+        color: var(--Accent);
+    }
+    
+    .number{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .category{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
 }
 @media(min-width:1536px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+    }
+    .desc-heading{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .desc-paragraph{
+        font-size: 28px;
+    }
+    .stats-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    span{
+        color: var(--Accent);
+    }
+    
+    .number{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .category{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
 } 
